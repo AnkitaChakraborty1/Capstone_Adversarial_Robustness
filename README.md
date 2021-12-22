@@ -6,15 +6,19 @@ In adversarial word-substitution attacks for neural NLP models there has been an
 
 ## II.	Evaluation Metrics 
 There are 4 basic metrics to evaluate the robustness of defenders
-### i.	Clean accuracy: classification accuracy of the model on the clean test dataset.
-### ii.	Accuracy under attack: prediction accuracy of the model under specific adversarial attack methods. 
-### iii.	Attack success rate: the number of texts that an attack algorithm successfully manipulates over the number of all texts attempted. 
-### iv.	Number of Queries: the average number of times the model is queried by the attacker. The idea is that the greater the average number of queries needed for attacker, the harder it is to compromise the defense model.
+#### i.	Clean accuracy: 
+Classification accuracy of the model on the clean test dataset.
+#### ii.	Accuracy under attack: 
+Prediction accuracy of the model under specific adversarial attack methods. 
+#### iii.	Attack success rate: 
+The number of texts that an attack algorithm successfully manipulates over the number of all texts attempted. 
+#### iv.	Number of Queries: 
+The average number of times the model is queried by the attacker. The idea is that the greater the average number of queries needed for attacker, the harder it is to compromise the defense model.
 So, to be a called a good/robust defense method it should have the following
-### i.	higher clean accuracy
-### ii.	higher accuracy under attack
-### iii.	lower attack success rate
-### iv.	requires larger number of queries for attack.
+#### i.	higher clean accuracy
+#### ii.	higher accuracy under attack
+#### iii.	lower attack success rate
+#### iv.	requires larger number of queries for attack.
 
 ## III.	Frameworks and libraries used
 Textattack - Providing implementations of 16 adversarial attacks from the literature, TextAttack supports a varied models and datasets, including BERT and other transformers. It is also inclusive of data augmentation and adversarial training modules for using components of adversarial attacks designed for improvement of model accuracy and robustness. TextAttack is democratizing NLP: anyone can try data augmentation and adversarial training on any model or dataset, with just a few lines of code.
